@@ -8,51 +8,54 @@
     </head>
     <body>
         <h1>Registration Form</h1>
-        <form action="/process" method="post">
+        <form action="www.google.com">
             <div>
-                <label>First Name: * </label>
-                <input type="text" name= "first name">
+                <label for="f_name">First Name: * </label>
+                <input type="text" name="f_name" id ="f_name">
             </div>
             <div>
-                <label>Last Name: * </label>
-                <input type="text" name= "last name">
+                <label for='l_name'>Last Name: * </label>
+                <input type="text" name= "l_name" id ="l_name">
             </div>
             <div>
-                <label>Email Address: * </label>
-                <input type="email" name= "email">
+                <label for="email">Email Address: * </label>
+                <input type="email" name= "email" id = "email">
             </div>
             <div>
-                <label>Password: * </label>
-                <input type="password" name= "password">
+                <label for="">Password: * </label>
+                <input type="password" name= "pass" id = "pass">
             </div>
             <div>
-                <label>Confirm Password: * </label>
-                <input type="password" name= "confirm password">
+                <label for="password">Confirm Password: * </label>
+                <input type="password" name= "chk_pass" id = "chk_pass" placeholder="Confirm Password">
             </div>
             <div>
-                <label>Birthday: </label>
-                <input type="date" name= "birthday" placeholder="mm/dd/yyyy">
+                <label for="">Birthday: </label>
+                <input type="date" name= "birthday" id = "birthday" placeholder="mm/dd/yyyy">
             </div>
             <div>
-                <label>Gender Identity: </label>
-                <input type="radio" id="male" name="gender" value="male">
+                <p>Gender Identity: </p>
+                <input type="radio" name="gender" value="1">
                 <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
+
+                <input type="radio" name="gender" value="2">
                 <label for="female">Female</label><br>
-                <input type="radio" id="non-binary" name="gender" value="non-binary">
+
+                <input type="radio"name="gender" value="3">
                 <label for="non-binary">Non-Binary</label><br>
-                <input type="radio" id="other" name="gender" value="other">
+
+                <input type="radio" name="gender" value="4">
                 <label for="other">I prefer not to answer</label><br>
             </div>
             <p>A short description about myself: </p>
             <textarea> </textarea>
             <div>
                 <label>Favorite Language</label>
-                <select name = "favorite language">        
-                    <option> Javascript</option>
-                    <option> Java</option>
-                    <option> Python</option>
-                    <option> C++</option>
+                <select name = "favorite language" id = "">        
+                    <option value= "1"> Javascript</option>
+                    <option value= "2"> Java</option>
+                    <option value= "3"> Python</option>
+                    <option value= "4"> C++</option>
                 </select>
             </div>
             <div>
@@ -62,7 +65,7 @@
             <div>
                 <input type="submit" value = "Create Account">
             </div>
-            <p>*Indicates a required field.</p>
+            <p>*Indicates a required field</p>
         </form>
     </body>
 </html>
